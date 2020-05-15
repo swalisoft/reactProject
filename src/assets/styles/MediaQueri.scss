@@ -1,0 +1,25 @@
+@media only screen and (max-width: 650px){
+    
+    .main h2{
+        font-size: 18px
+    }
+    .description{
+        font-size: 14px
+    }
+    .footer__termsConditions{
+        display: flex;
+        flex-direction: column;
+    }
+    .footer__creator{
+        width: 60%;
+    }
+    .footer__termsConditions a{
+        font-size: 10px
+    }
+    .carousel{
+        margin-bottom: 10px;
+    }
+    .input{
+        height: 30px;
+    }
+}

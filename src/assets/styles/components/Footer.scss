@@ -1,0 +1,43 @@
+@import "../Vars.scss";
+
+.footer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 90px;
+    width: 100%;
+    font-family: Helvetica;
+}
+.footer__termsConditions{
+  margin-left: 15px;
+}
+.footer__termsConditions a{
+    text-decoration: none;
+    color:$color;
+    margin:10px 18px 10px 0;
+    font-family: $theme-font;
+    font-size: 15px;
+}
+.footer__termsConditions a:hover{
+    text-decoration: underline;
+}
+.footer__creator{
+    width: 240px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    color: $color;
+    font-size: 15px;
+    font-family: $theme-font;
+    margin-right: 15px;
+}
+.footer__creator img{
+    width: 20%;
+    height: 20%;
+    margin: 0 0 0 5px;
+    border-radius: 35px;
+}
+::selection{
+    background-color: red;
+    color:$color
+}

@@ -18,3 +18,11 @@ $ npm install mini-css-extract-plugin css-loader npm-sass sass-loader --save-dev
     
 $ npm install eslint babel-eslint eslint-config-airbnb eslint-plugin-import eslint-plugin-react eslint-plugin-jsx-ally
     eslint it'll help us detect bugs
+
+$ npm install file-loader --save-dev
+    para cargar imagenes
+
+//  $ npm install json-server -g >> para simular un servidor en el entorno local sudo opcional 
+
+$ npm install prop-types
+    para la poner el tipo del prop que va venir 

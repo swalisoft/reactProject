@@ -1,4 +1,8 @@
+@import "./Vars.scss";
+@import "./MediaQueri.scss";
+
 body{
-    margin:0;
-    background-color: #000000;
-    color:white}
+    padding: 0;
+    margin: 0;
+    background: $background;
+}

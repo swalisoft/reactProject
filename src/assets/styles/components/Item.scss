@@ -1,0 +1,57 @@
+@import "../App.scss";
+
+.carousel-items{
+    flex-shrink: 0;
+    width: 200px;
+    height: 250px;
+    background-color: black;
+    border-radius: 25px;
+    margin-right: 10px;
+    cursor: pointer;
+    transition: 200ms all;
+    transform-origin: center left;
+    overflow: hidden;            /*Invertigar*/
+    position: relative;
+    
+}
+.carousel__conteiner:hover .carousel-items{
+    opacity: .5;
+}
+
+.carousel-items:hover ~ .carousel-items{
+    transform: translate3d(100px,0px,0);
+}
+
+.carousel__conteiner:hover .carousel-items:hover{
+    transform: scale(1.5);
+    opacity: 1;
+}
+
+.carousel-items__img{
+    width: 200px;
+    height: 250px;
+}
+.carousel-items__datails{
+    background: linear-gradient(to top, rgba(0,0,0,1) 0%, rgba(0,0,0,0)100%);
+    font-size: 10px;
+    color: $color;
+    position: absolute;
+    right: 0;
+    left: 0;
+    top: 162px;
+    bottom: 0;
+    opacity: 0;
+    transition: 350ms opacity;
+    padding: 15px;
+}
+.carousel-items__datails img{
+    width: 30px;
+}
+.carousel-items__datails p{
+    margin: 5px 0;
+    font-weight: 600;
+    font-family: $theme-font;
+}
+.carousel-items:hover .carousel-items__datails{
+    opacity: 1;
+}
