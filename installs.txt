@@ -26,3 +26,5 @@ $ npm install file-loader --save-dev
 
 $ npm install prop-types
     para la poner el tipo del prop que va venir 
+
+$ npm install react-router-dom --save 
