@@ -1,4 +1,4 @@
-@import "../App.scss";
+@import "../Vars.scss";
 
 .carousel-items{
     flex-shrink: 0;
@@ -10,7 +10,8 @@
     cursor: pointer;
     transition: 200ms all;
     transform-origin: center left;
-    overflow: hidden;            /*Invertigar*/
+    overflow: hidden;
+    object-fit: cover;            /*Invertigar*/
     position: relative;
     
 }

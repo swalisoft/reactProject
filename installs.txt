@@ -9,13 +9,13 @@ $ npm install @babel/core babel-loader @babel/preset-env @babel/preset-react --s
 
 
 $ npm install webpack webpack-cli html-webpack-plugin html-loader --save-dev
-    webpack => se encarga que los archilos js html css multimedia este listos y obtimizados para mandar a produccio o 
+    webpack => handle files  of js html css multimedia este listos y optimizados para mandar a produccio o 
 
 $ npm install webpack-dev-server --save-dev
 
 $ npm install mini-css-extract-plugin css-loader npm-sass sass-loader --save-dev
     installing sass for use in us project
-    
+
 $ npm install eslint babel-eslint eslint-config-airbnb eslint-plugin-import eslint-plugin-react eslint-plugin-jsx-ally
     eslint it'll help us detect bugs
 
@@ -27,4 +27,10 @@ $ npm install file-loader --save-dev
 $ npm install prop-types
     para la poner el tipo del prop que va venir 
 
-$ npm install react-router-dom --save 
+$ npm install react-router-dom --save
+
+$ npm install redux react-redux --Save 
+    para el manejo del store osea del almacenamiento
+
+$ npm install md5 --save
+    for autogenarate hash for our avadar.

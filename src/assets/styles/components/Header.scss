@@ -1,4 +1,4 @@
-@import "../Vars.scss";
+@import "../Home.scss";
 
 .header{
     width: 100%;
@@ -8,10 +8,21 @@
     justify-content: space-between;
     align-items: center;
 }
-.header__img{
-    width: 150px;
-    height: 50px;
-    margin-left: 18px;
+
+.header .brand{
+  color: $color;
+  font-family: $theme-font;
+  display: flex;
+  align-items: center;
+}
+
+.header .brand span{
+  font-weight: 600;
+}
+
+.header .brand .header__img{
+    height: 55px;
+    margin: 0 8px 0 18px;
 }
 .header__menu{
     position: relative;
@@ -22,12 +33,17 @@
     font-family: $theme-font;
 }
 .header__menu img{
-    width: 30px;
+    width: 40px;
     height: 40px;
+    border-radius: 50px;
     margin-right: 8px;
 }
+.header__menu p{
+  margin:0
+}
+
 .header__menu ul{
-    margin: 10px 0;
+    padding: 10px 0;
     display: none;
     position: absolute;
     text-align: right;
@@ -40,7 +56,7 @@
     display: block;
 }
 .header__menu li{
-    margin: 14px 0;
+  padding: 14px 0;
 }
 .header__menu a{
     text-decoration: none;

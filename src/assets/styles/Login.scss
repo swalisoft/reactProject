@@ -1,0 +1,119 @@
+@import "./Vars.scss";
+
+.login {
+  margin: 40px 0;
+  color: $color;
+  display: flex;
+  justify-content: center;
+  min-height: calc(100vh - 200px);
+}
+
+.login__conteiner {
+  min-width: 30%;
+  text-align: center;
+  border: 2px solid rgba(255, 255, 255, 0.2);
+  padding: 30px 40px 10px;
+  background: rgba(255, 255, 255, 0.15);
+  border-radius: 25px;
+  box-shadow: 0 0 44px -5px #000000;
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+  height: 600px;
+}
+
+.login__conteiner--form {
+  display: flex;
+  flex-direction: column;
+  color: $color;
+}
+
+.login__conteiner--form >.inputLogin {
+  outline: none;
+  border: none;
+  height: 20px;
+  margin: 15px 0;
+  background-color: rgba(255, 255, 255, 0);
+  border-bottom: 2px solid #a09a9a;
+  color: $color;
+  font-size: 15px;
+  padding: 5px 5px;
+}
+
+.login__conteiner--form > .inputLogin:hover, 
+.login__conteiner--form > .inputLogin:focus{
+  border-bottom: 2px solid #ffffff;
+}
+
+.login__conteiner--form-button {
+  border: none;
+  background: rgba(255, 255, 255, 0.1);
+  height: 35px;
+  border-radius: 25px;
+  color: $color;
+  margin: 15px 0;
+  font-weight: 700;
+  cursor: pointer;
+  outline: none;
+  font-size: 17px;
+}
+
+.login__conteiner--form-button:hover {
+  transform: scale(1.055555);
+  background: rgba(255, 255, 255, 0.2);
+}
+
+::placeholder {
+  color: $color;
+  font-style: italic;
+}
+
+.login__conteiner--rememberMe {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+
+.login__conteiner--rememberMe label {
+  margin-right: 10px;
+  font-size: 13px;
+}
+
+.login__conteiner--rememberMe a {
+  color: $color;
+  margin-left: 10px;
+  font-size: 13px;
+  text-decoration: none;
+}
+.login__conteiner--rememberMe a:hover {
+  text-decoration: underline #ffffff;
+}
+
+.flexCenter, .login__conteiner--socialMedia > div{
+  display: flex;
+  align-items: center;
+}
+
+.login__conteiner--socialMedia div {
+  font-size: 13px;
+}
+
+.login__conteiner--socialMedia img {
+  width: 30px;
+  margin-right: 10px;
+}
+
+.login__conteiner--signUp {
+  font-size: 13px;
+  text-align: left;
+}
+
+.login__conteiner--signUp a {
+  text-decoration: none;
+  color: $color;
+  font-weight: 800;
+}
+
+.login__conteiner--signUp a:hover {
+  text-decoration: underline;
+}

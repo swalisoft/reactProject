@@ -6,7 +6,8 @@ module.exports = {
   entry: './src/index.js',
   output: {
     path: path.resolve(__dirname, 'dist'),
-    filename: 'bundle.js'
+    filename: 'bundle.js',
+    publicPath:'/'
   },
   resolve: {
       extensions: ['.js', '.jsx']
@@ -17,7 +18,7 @@ module.exports = {
         test: /\.(js|jsx)$/,
         exclude: /node_modules/,
         use: {
-            loader: 'babel-loader'
+          loader: 'babel-loader'
         }
       },
       {
@@ -39,7 +40,7 @@ module.exports = {
         ]
       },
       {
-        test:/\.(png|gif|jpg)$/,
+        test:/\.(png|gif|jpg|mp4)$/,
         use: [
           {
             'loader': 'file-loader',
@@ -50,6 +51,9 @@ module.exports = {
         ]
       }
     ]
+  },
+  devServer: {
+    historyApiFallback: true
   },
   plugins: [
     new htmlWebpackPlugin({
