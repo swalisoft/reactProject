@@ -5,6 +5,7 @@ import { createStore, compose } from 'redux'
 import App from './routes/App'
 import reducer from './reducers'
 
+
 const initialState = {
     user:{},
     playing:{},

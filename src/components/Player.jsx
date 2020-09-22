@@ -13,9 +13,9 @@ const Player = ({history,match,playing, player}) => {
 
   return (hasPlaying)
     ?<>
-      <div className="container mt-5">
+      <div className="container player mt-5">
         <div className="row">
-          <div className="offset-2 col-8">
+          <div className="col-12 offset-0 col-md-10 offset-md-1 col-lg-8 offset-lg-2 ">
             <video controls autoPlay>
               <source src={playing.source} type="video/mp4"/>
             </video>

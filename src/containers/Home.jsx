@@ -8,7 +8,7 @@ import Categories from '../components/Categories'
 import Item from '../components/Item'
 
 const Home = ({myList, trends, originals, result}) => {
-  const lengthOfAllVideos =  trends.length = originals.length;
+	const lengthOfAllVideos =  trends.length + originals.length;
   return (
     <>
       <Header />
@@ -34,7 +34,7 @@ const Home = ({myList, trends, originals, result}) => {
                         <Item
                         key={item.id} 
                         {...item}
-                        isList
+                        isMyList
                         />
                       )
                   })}

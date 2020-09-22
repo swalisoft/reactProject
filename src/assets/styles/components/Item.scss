@@ -8,10 +8,10 @@
     border-radius: 25px;
     margin-right: 10px;
     cursor: pointer;
-    transition: 200ms all;
+    transition: all 200ms;
     transform-origin: center left;
     overflow: hidden;
-    object-fit: cover;            /*Invertigar*/
+    object-fit: cover;            /*reajustar images*/
     position: relative;
     
 }
@@ -20,7 +20,7 @@
 }
 
 .carousel-items:hover ~ .carousel-items{
-    transform: translate3d(100px,0px,0);
+    transform: translate(100px,0px);
 }
 
 .carousel__conteiner:hover .carousel-items:hover{
@@ -37,9 +37,9 @@
     font-size: 10px;
     color: $color;
     position: absolute;
-    right: 0;
-    left: 0;
-    top: 162px;
+		right: 0;
+		left: 0;
+		top: 162px;
     bottom: 0;
     opacity: 0;
     transition: 350ms opacity;

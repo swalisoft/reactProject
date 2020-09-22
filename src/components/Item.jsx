@@ -5,7 +5,7 @@ import { connect } from 'react-redux'
 import { setFavorite, deleteFavorite } from '../actions'
 import { Link } from 'react-router-dom'
 
-const Item = ({id, cover, title, year, contentRating, duration, isList, setFavorite, deleteFavorite}) => {
+const Item = ({id, cover, title, year, contentRating, duration, isMyList, setFavorite, deleteFavorite}) => {
   const handleSetFavorite = ()=>{
     setFavorite({
       id, cover, title, year, contentRating, duration,
@@ -22,7 +22,7 @@ const Item = ({id, cover, title, year, contentRating, duration, isList, setFavor
       <div className="carousel-items__datails">
         <div>
             <Link to={`/player/${id}`} ><img src="https://i.imgur.com/bO6zjcQ.png" alt="play"/></Link>
-            {isList 
+            {isMyList 
               ?(<img onClick={()=>handleDeleteFavorite(id)} src="https://i.imgur.com/VLn0ULY.png" alt="delete"/>)
               :(<img onClick={handleSetFavorite} src="https://i.imgur.com/HaMtWnF.png" alt="plus"/>)
             }

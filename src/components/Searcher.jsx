@@ -15,10 +15,10 @@ const useSearchVideo = allVideos =>{
   data = [...data, auxi].flat();
 
   const[query, setQuery] = React.useState('');
-  const [filter, setFilter] = React.useState(data);
+  const [filter, setFilter] = React.useState(allVideos);
 
   React.useMemo(()=>{
-    const result = data.filter(item => `${item.title}${item.type}`.toLowerCase().includes(query.toLowerCase())) 
+    const result = allVideos.filter(item => `${item.title}${item.type}`.toLowerCase().includes(query.toLowerCase()))
     setFilter(result);  
   },[allVideos, query]);
 
